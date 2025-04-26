@@ -1,54 +1,108 @@
-# React + TypeScript + Vite
+# 📱 Phone Shop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Сучасний інтернет-магазин мобільних телефонів та аксесуарів, розроблений з використанням React, TypeScript та Material-UI.
 
-Currently, two official plugins are available:
+## 🚀 Функціональність
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🛍️ Каталог товарів з фільтрацією та пошуком
+- 🛒 Кошик покупок
+- ❤️ Список бажань
+- 👤 Особистий кабінет користувача
+- 📦 Оформлення замовлення
+- 🔐 Автентифікація користувачів
+- 📱 Адаптивний дизайн
 
-## Expanding the ESLint configuration
+## 🛠️ Технології
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React
+- TypeScript
+- Material-UI
+- Framer Motion
+- React Router
+- Context API
+- Vite
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 📋 Вимоги
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Node.js 14.0.0 або вище
+- npm 6.0.0 або вище
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Встановлення та запуск
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+1. Клонуйте репозиторій:
+\`\`\`bash
+git clone git@github.com:Karakal999/Phone-shop.git
+\`\`\`
+
+2. Перейдіть до директорії проекту:
+\`\`\`bash
+cd Phone-shop
+\`\`\`
+
+3. Встановіть залежності:
+\`\`\`bash
+npm install
+\`\`\`
+
+4. Запустіть проект:
+\`\`\`bash
+npm run dev
+\`\`\`
+
+## 🌳 Структура проекту
+
+\`\`\`
+src/
+├── components/     # Компоненти React
+├── context/       # Контексти React
+├── hooks/         # Користувацькі хуки
+├── pages/         # Сторінки додатку
+├── services/      # Сервіси API
+├── styles/        # Стилі та теми
+└── types/         # TypeScript типи
+\`\`\`
+
+## 🤝 Правила контрибуції
+
+1. Створіть нову гілку для своїх змін:
+\`\`\`bash
+git checkout -b feature/your-feature-name
+\`\`\`
+
+2. Зробіть необхідні зміни та закомітьте їх:
+\`\`\`bash
+git commit -m "Add: опис ваших змін"
+\`\`\`
+
+3. Відправте зміни у свій форк:
+\`\`\`bash
+git push origin feature/your-feature-name
+\`\`\`
+
+4. Створіть Pull Request
+
+### 📝 Правила оформлення комітів
+
+- `Add:` - додавання нової функціональності
+- `Fix:` - виправлення помилок
+- `Update:` - оновлення існуючої функціональності
+- `Refactor:` - рефакторинг коду
+- `Docs:` - оновлення документації
+- `Style:` - зміни стилів та верстки
+- `Test:` - додавання або оновлення тестів
+
+## 🌟 Основні гілки
+
+- `main` - основна гілка проекту
+- `development` - гілка для розробки
+- `staging` - гілка для тестування
+- `feature/*` - гілки для нових функцій
+- `bugfix/*` - гілки для виправлення помилок
+
+## 📄 Ліцензія
+
+MIT License
+
+## 👥 Автори
+
+- [Karakal999](https://github.com/Karakal999)
