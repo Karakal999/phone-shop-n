@@ -180,7 +180,7 @@ const CatalogContent: React.FC<{ defaultCategory?: string }> = ({
   };
 
   const handlePageChange = (
-    event: React.ChangeEvent<unknown>,
+    _event: React.ChangeEvent<unknown>,
     value: number
   ) => {
     setPage(value);

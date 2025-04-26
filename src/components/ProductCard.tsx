@@ -40,6 +40,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
       image,
       category,
       quantity: 1,
+      description: "",
     });
   };
 
