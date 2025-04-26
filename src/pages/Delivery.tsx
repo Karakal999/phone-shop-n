@@ -18,7 +18,7 @@ const Delivery: React.FC = () => {
       </Typography>
 
       <Grid container spacing={3}>
-        <Grid container item xs={12} md={8}>
+        <Grid item xs={12} md={8}>
           <Paper sx={{ p: 4, mb: 3, width: "100%" }}>
             <Typography variant="h2" gutterBottom>
               Способи доставки
@@ -54,7 +54,7 @@ const Delivery: React.FC = () => {
             />
           </Paper>
 
-          <Paper sx={{ p: 4 }}>
+          <Paper sx={{ p: 4, width: "100%" }}>
             <Typography variant="h2" gutterBottom>
               Способи оплати
             </Typography>
@@ -90,7 +90,7 @@ const Delivery: React.FC = () => {
           </Paper>
         </Grid>
 
-        <Grid container item xs={12} md={4}>
+        <Grid item xs={12} md={4}>
           <Paper sx={{ p: 4, width: "100%" }}>
             <Typography variant="h2" gutterBottom>
               Важлива інформація
