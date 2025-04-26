@@ -1,5 +1,5 @@
-import React, { Component, ErrorInfo, ReactNode } from "react";
-import { Box, Button, Typography } from "@mui/material";
+import { Component, ErrorInfo, ReactNode } from "react";
+import { Box, Typography, Button } from "@mui/material";
 import ErrorOutlineIcon from "@mui/icons-material/ErrorOutline";
 import { motion } from "framer-motion";
 
