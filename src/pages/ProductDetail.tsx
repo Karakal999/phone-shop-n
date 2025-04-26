@@ -10,16 +10,8 @@ import {
   Link,
 } from "@mui/material";
 import { ShoppingCart, ArrowBack } from "@mui/icons-material";
-import { useCart } from "../context/CartContext";
+import { useCart, Product } from "../context/CartContext";
 import { useNavigate } from "react-router-dom";
-
-interface Product {
-  name: string;
-  price: number;
-  description: string;
-  image: string;
-  category: string;
-}
 
 export default function ProductDetail() {
   const navigate = useNavigate();
@@ -33,6 +25,7 @@ export default function ProductDetail() {
       "Найновіший iPhone з потужним процесором A17 Pro та професійною системою камер.",
     image: "/images/iphone15pro.jpg",
     category: "Смартфони",
+    quantity: 1,
   };
 
   const handleAddToCart = () => {

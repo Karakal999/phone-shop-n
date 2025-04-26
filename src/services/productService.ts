@@ -15,6 +15,7 @@ export interface Product {
 }
 
 export interface ProductFilters {
+  [key: string]: unknown;
   category?: string[];
   minPrice?: number;
   maxPrice?: number;

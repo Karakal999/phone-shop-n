@@ -440,10 +440,14 @@ const CatalogContent: React.FC<{ defaultCategory?: string }> = ({
   );
 };
 
-const Catalog: React.FC = () => {
+interface CatalogProps {
+  defaultCategory?: string;
+}
+
+const Catalog: React.FC<CatalogProps> = ({ defaultCategory = "" }) => {
   return (
     <ErrorBoundary>
-      <CatalogContent />
+      <CatalogContent defaultCategory={defaultCategory} />
     </ErrorBoundary>
   );
 };
